@@ -1,10 +1,12 @@
 from django.urls import path
-from . import views
+from .views import home, user_registration, login, logout
 
 app_name = "lms"  # ✅ This must be included
 
 urlpatterns = [
-    path('login/', views.login, name='login'),
-    path('logout/', views.logout, name='logout'),
-    path('register/', views.user_registration, name='user_registration'),
+    path('', home, name='home'),
+    path('user_registration', user_registration, name='user_registration'),
+    path('login', login, name='login'),
+    path('logout', logout, name='logout'),
+   
 ]

@@ -13,4 +13,4 @@ def logout(request):
     pass  # Implement logout logic
 
 def user_registration(request):
-    return render(request, 'lms/user_register.html')
+    return render(request, 'lms/user_registration.html') 

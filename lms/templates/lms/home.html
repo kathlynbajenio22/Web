@@ -9,7 +9,7 @@
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="container text-center">
         <div class="card shadow p-5" style="max-width: 450px; margin: auto;">
-            <h2 class="mb-3">Welcome to Our LMS</h2>
+            <h2 class="mb-3">Welcome to homepage</h2>
             {% if user.is_authenticated %}
                 <p class="lead">Hello, <strong>{{ user.username }}</strong>!</p>
                 <a href="{% url 'lms:logout' %}" class="btn btn-danger w-100">Logout</a>
@@ -18,6 +18,7 @@
                 <div class="d-grid gap-2">
                     <a href="{% url 'lms:login' %}" class="btn btn-primary">Login</a>
                     <a href="{% url 'lms:user_registration' %}" class="btn btn-success">Signup</a>
+
                 </div>
             {% endif %}
         </div>
