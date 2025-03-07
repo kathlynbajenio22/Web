@@ -6,8 +6,8 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'lms/home.html')
 
-def login(request):
-    return render(request, 'lms/login.html')
+def user_login(request):
+    return render(request, 'lms/user_login.html')
 
 def logout(request):
     pass  # Implement logout logic
